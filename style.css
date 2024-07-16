@@ -1,209 +1,124 @@
-
-/*ESTILO GERAL*/
-* {
+/* Reset de margens e padding para o corpo da página */
+body, h1, h2, h3, h4, p, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
+/* Estilo global para a página */
 body {
-    background-color: black;
-    height: 100vh;  
+    font-family: 'Poppins', sans-serif; /* Utilizando a fonte do Google Fonts */
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branco */
+    line-height: 1.6;
 }
 
-.interface{
-    max-width: 1280px; 
-    margin: 0 auto;
+/* Estilizando links */
+a {
+    color: #fff; /* Cor do texto branco para links */
+    text-decoration: none;
 }
 
-.flex {
-    display: flex;
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre links */
 }
 
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(53, 107, 89);
-    border: 0;
-    border-radius: 30px;
-}
-
-h2.titulo {
-    color: white;
-    font-size: 38px;
-    text-align: center;
-}
-
-h2.titulo span {
-    color: aquamarine;
+/* Estilo para botões */
+button {
+    background-color: #4CAF50; /* Cor verde */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 button:hover {
-    color: aquamarine;
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse sobre o botão */
 }
 
+/* Estilo para cabeçalhos */
+h1, h2, h3, h4 {
+    color: #fff; /* Cor do texto branco */
+}
 
-/*ESTILO DO CABEÇALHO*/ 
+/* Estilo para o header */
 header {
-    padding: 40px 4%;
+    background-color: #000; /* Cor de fundo preta */
+    padding: 20px 0;
 }
 
-header > .interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Estilo para o footer */
+footer {
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px 0;
 }
 
-header a {
-    color : rgb(110, 110, 110); 
-    text-decoration: none;
-}
-
-header a:hover {
-    color: white;
-}
-
-header nav ul {
+/* Estilo para o menu desktop */
+.menu-desktop ul {
     list-style-type: none;
-}
-
-header nav li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-
-header .btn-contato button:hover {
-    color: aquamarine;
-}
-
-/* ESTILO DO TOPO DO SITE */ 
-
-section.topo-do-site {
-    padding: 40px 4%;
-}
-
-section.topo-do-site.flex {
-    align-items: center;
-    justify-content: center;
-}
-
-.topo-do-site h1 {
-    color: white;
-    font-size: 38px;
-}
-
-.topo-do-site h1 span{
-    color: aquamarine;
-}
-
-.topo-do-site .txt-topo-site p {
-    color: white;
-    margin: 40px 0;
-}
-
-/*ESTILO DAS ESPECIALIDADES*/ 
-section.especialidades {
-    padding:40px 4%;
-}
-
-.especialidades-box {
-    color: #FFF;
-    padding:40px ;
-    margin-bottom: 20px; /* Espaçamento entre as especialidades */
-    margin-right: 20px; /* Margem no lado direito para evitar que fique grudado na borda */
-    padding: 20px; /* Espaçamento interno para dar um visual mais espaçado */
-    border: 1px solid #ccc; /* Adiciona uma borda para separar visualmente as especialidades */
-}
-
-
- h2 {
-    margin-bottom: 20px;
-}
-
-/*ESTILO DO OBJETIVO */
-
-section .objetivos {
-    padding: 40px 4%;
-}
-
-.Objetivos .txt-objetivos {
-    color: white;
-}
-
-.Objetivos .flex {
-    align-items: center;
-    gap: 60px;
-}
-
-h4 {
-    font-size: 38px;
-    color: white;
     text-align: center;
-    margin-bottom: 10px;
 }
 
-span {
-    color: aquamarine;
-}
-
-.txt-objetivos .p {
-    text-align: justify;
-}
-
-.Objetivos .btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: none;
-    background-color: aquamarine;
-    font-size: 22px;
+.menu-desktop ul li {
+    display: inline;
     margin: 0 10px;
 }
 
-footer {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px 0; 
-    margin-top: 100px; 
-
+.menu-desktop ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Estilo para as seções principais */
+.topo-do-site, .Objetivos {
+    padding: 40px 0;
 }
 
-.footer-logo img {
-    height: 50px; 
+.topo-do-site .txt-topo-site {
+    flex: 1;
 }
 
+.topo-do-site .img-topo-site {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo para as caixas de especialidades */
+.especialidades-box {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para imagens */
+.img-topo-site img, .img-objetivos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para o ícone de redes sociais no footer */
+.footer-social i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Estilo para o menu no footer */
 .menu-footer ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    text-align: center;
 }
 
 .menu-footer ul li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline;
+    margin: 0 10px;
 }
 
 .menu-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-social {
-    font-size: 24px;
-}
-
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
