@@ -1,0 +1,209 @@
+
+/*ESTILO GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;  
+}
+
+.interface{
+    max-width: 1280px; 
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(53, 107, 89);
+    border: 0;
+    border-radius: 30px;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: aquamarine;
+}
+
+button:hover {
+    color: aquamarine;
+}
+
+
+/*ESTILO DO CABEÇALHO*/ 
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color : rgb(110, 110, 110); 
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+header .btn-contato button:hover {
+    color: aquamarine;
+}
+
+/* ESTILO DO TOPO DO SITE */ 
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 38px;
+}
+
+.topo-do-site h1 span{
+    color: aquamarine;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+/*ESTILO DAS ESPECIALIDADES*/ 
+section.especialidades {
+    padding:40px 4%;
+}
+
+.especialidades-box {
+    color: #FFF;
+    padding:40px ;
+    margin-bottom: 20px; /* Espaçamento entre as especialidades */
+    margin-right: 20px; /* Margem no lado direito para evitar que fique grudado na borda */
+    padding: 20px; /* Espaçamento interno para dar um visual mais espaçado */
+    border: 1px solid #ccc; /* Adiciona uma borda para separar visualmente as especialidades */
+}
+
+
+ h2 {
+    margin-bottom: 20px;
+}
+
+/*ESTILO DO OBJETIVO */
+
+section .objetivos {
+    padding: 40px 4%;
+}
+
+.Objetivos .txt-objetivos {
+    color: white;
+}
+
+.Objetivos .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+h4 {
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span {
+    color: aquamarine;
+}
+
+.txt-objetivos .p {
+    text-align: justify;
+}
+
+.Objetivos .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: aquamarine;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0; 
+    margin-top: 100px; 
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px; 
+}
+
+.menu-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social {
+    font-size: 24px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
